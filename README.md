@@ -7,3 +7,4 @@ Retrieves the top 10 current news items using a News API.
 Sets timers for user-specified durations.
 Uses AI to answer queries by analyzing a text corpus, finding similarities between the input and the corpus content.
 Capable of direct learning through user interaction, continuously improving its responses.
+Genes.txt file contains a text corpus of a wikipidea page of genes so ask bot will give query about genes
