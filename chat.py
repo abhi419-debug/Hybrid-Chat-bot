@@ -122,8 +122,8 @@ def predict_class(sentence,model):
         return_list.append({'intent':classes[result[0]],'prob':str(result[1])})
     return return_list
 
-def gbu_search(user_response):
-  f=open('/content/gbu.txt','r',errors='ignore')
+def genes_search(user_response):
+  f=open('/content/genes.txt','r',errors='ignore')
   raw_doc=f.read()
   raw_data=raw_doc.lower()
   sent_tokens=nltk.sent_tokenize(raw_doc)
@@ -155,7 +155,7 @@ def get_response(return_list,intents_json):
         tag=return_list[0]['intent']
     if tag=='search':
       ques=input("What would you like to know")
-      return gbu_search(ques)
+      return genes_search(ques)
     if tag=='datetime':
         print(time.strftime("%A"))
         print (time.strftime("%d %B %Y"))
